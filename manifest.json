@@ -1,0 +1,35 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ 
+         "js/jquery.js",
+         "js/oAuth.js",
+         "js/sha1.js",
+         "js/twitter.js",
+         "js/background.js"]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "appicon_19x19.png",
+         "38": "appicon_38x38.png"
+      },
+      "default_title": "Screenshoot Poster",
+      "default_popup": "popup.html"
+   },
+   "description": "Create a screenshot and post it to twitter easily",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "41",
+   "name": "Screenshoot Poster",
+   "offline_enabled": true,
+   "permissions": [ "tabs", "storage", "activeTab", "*://*.twitter.com/*" ],
+   "version": "0.0.1",
+   "content_scripts": [{
+      "matches": ["https://yourwebsitefortwittercallback.com/*"],
+      "js": ["js/handleAuthenticationCallback.js"]
+   }]
+}

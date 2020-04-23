@@ -1,0 +1,58 @@
+
+body {
+    width: 350px;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  #login {
+    margin-top: 10px;
+  }
+
+.post-wrapper {
+    margin-top: 10px;
+}
+
+.post-wrapper .post {
+    background: #fff;
+    margin: auto;
+}
+
+.post-wrapper img {
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.post-wrapper textarea {
+    height: 100px;
+    flex-grow: 2;
+}
+
+.post-wrapper .success-message {
+    color: green;
+}
+
+input[type="button"] {
+    display:inline-block;
+    padding: 0.2em 1.45em;
+    margin: 0.1em;
+    border:0.15em solid #CCCCCC;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Segoe UI','Roboto',sans-serif;
+    font-weight:400;
+    color:#000000;
+    background-color:#CCCCCC;
+    text-align:center;
+    position:relative;
+    outline: none;
+}
+
+input[type="button"]:hover {
+    border-color:#7a7a7a;
+}
+
+input[type="button"]:active {
+    background-color:#999999;
+}

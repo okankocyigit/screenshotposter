@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Screenshot Poster</title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/oAuth.js"></script>
+  <script type="text/javascript" src="js/sha1.js"></script>
+  <script type="text/javascript" src="js/twitter.js"></script>
+  <link rel="stylesheet" href="css/popup.css" media="all"/>
+</head>
+<body>
+  <div id="anonymous" style="display: none;">
+    Extension requires twitter authorization before posting new tweets.
+    <br>
+    <input id="login" type="button" value="Login with Twitter" />
+  </div>
+  <div id="authorized" style="display:none">
+    <input id="selectarea" type="button" value="Select a rectangle area">
+    <input id="logout" type="button" value="Logout">
+    <div class="post-wrapper" style="display: none;">
+      <div class="post">
+        <div style="display:flex">
+          <img src="">
+          <textarea placeholder="Add your status here..."></textarea>
+        </div>
+        <div style="text-align: right;margin-top: 10px;">
+          <input type="button" class="post-btn" value="Post Tweet">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>

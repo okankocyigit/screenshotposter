@@ -1,0 +1,61 @@
+#screenshotposter__overlay {
+    -webkit-user-select: none;
+    user-select: none;
+    background: rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: crosshair;
+    transition: opacity 1000ms;
+}
+
+#screenshotposter__overlay__hint {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 18px 20px 20px;
+    border-radius: 3px;
+    line-height: 1.5;
+    font-size: 12px;
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+#screenshotposter__overlay__hint:hover {
+    opacity:0.001;
+}
+
+#screenshotposter__overlay__hint hr {
+    background: transparent;
+    margin: 10px 0;
+    border: 0;
+    display: block;
+    border-top: 1px dotted #999;
+}
+
+#screenshotposter__overlay__hint kbd {
+    padding: 2px 6px 3px 6px;
+    background: #666;
+    color: #fff;
+    font-family: monospace;
+    border: 0;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #888;
+    border-radius: 2px;
+    margin: 0;
+    box-shadow: none;
+    text-shadow: none;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+#screenshotposter__overlay__selection {
+    position: absolute;
+    outline: 2000px solid rgba(0,0,0,0.2);
+}
